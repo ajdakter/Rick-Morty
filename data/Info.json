@@ -1,0 +1,4 @@
+{
+    "BaseUri": "https://rickandmortyapi.com/api/episode/",
+    "DetailUri": "https://rickandmortyapi.com/api/character/"
+}
