@@ -59,6 +59,7 @@ export default function Episode({ navigation }) {
       onPress={() =>
         
         navigation.navigate("EpisodeDetail", {
+          ItemId:86,
           otherParam: data,
         })
       }

@@ -14,6 +14,7 @@ export default function CharacterDetail(props: any) {
 
 
   const getCharacterDetails = async () => {
+    // Use uri because parameter passing have a problems ***undefined"
     const uri = "https://rickandmortyapi.com/api/character/2";
     let json: any;
 
@@ -34,7 +35,6 @@ export default function CharacterDetail(props: any) {
       setOriginName(json.origin.name);
       setLocationName(json.location.name);
       setImage(json.image);
-      console.log(dene);
       return json;
     } catch (error) {
       console.log(error);

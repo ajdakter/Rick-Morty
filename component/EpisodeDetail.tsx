@@ -32,10 +32,13 @@ export default function EpisodeDetail({navigation,route},props:any) {
   const auth_user = UserInfo(props);
   console.log(auth_user);
   useEffect(() => {
-    getEpisodeDetails("8");
+    getEpisodeDetails("4"); 
+    //Select one parameter for EpisodeDetails page because 
+    //otherParam return undefined 
     temp = 1
-    console.log("geldi*******************");
+    //Control otherParam and itemId parameters
     console.log(otherParam);
+    console.log(itemId);
     //console.log(JSON.stringify(_caption));
     console.log(JSON.stringify(itemId));
   }, []);
